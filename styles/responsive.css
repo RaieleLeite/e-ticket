@@ -1,0 +1,97 @@
+/* Arquivo: responsive.css */
+/* Responsividade e acessibilidade para telas menores */
+
+@media (max-width: 1024px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  header {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  header .logo {
+    padding-left: 0;
+    width: 150px;
+  }
+
+  main.container {
+    width: 100%;
+    padding: 2rem;
+    background-position: center;
+    background-size: contain;
+  }
+
+  main.container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  form .input-group select,
+  form .input-group input {
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
+    font-size: 1.25rem;
+  }
+
+  .hachuras {
+    margin: 3rem 0;
+    width: 100%;
+  }
+
+  .container section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .container section h2 {
+    text-align: center;
+  }
+
+  .container section ul {
+    align-items: flex-start;
+    font-size: 1.125rem;
+  }
+
+  .container section ul li span {
+    font-size: 1.25rem;
+  }
+
+  .container section img {
+    align-self: center;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Extra: acessibilidade de foco visível para teclado */
+:focus-visible {
+  outline: 2px dashed #00F4BF;
+  outline-offset: 4px;
+}
+
+/* Texto oculto para leitores de tela */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
